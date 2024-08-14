@@ -20,7 +20,7 @@ import {
 const Header = () => {
   return (
     <>
-      <div className="  border-gray border-b w-full flex justify-center py-[25px] px-2 ">
+      <div className="  border-gray border-b w-full flex justify-center py-[25px] px-4 ">
         <div
           className="max-w-[1300px] w-full z-50 flex justify-between items-center  
           "
@@ -35,12 +35,7 @@ const Header = () => {
 
           <Sheet>
             <SheetTrigger>
-              <Button
-                variant={"ghost"}
-                className="lg:hidden mr-8 p-4 hover:bg-gray-100 rounded-lg h-[55px] "
-              >
-                <HamburgerMenuIcon className="size-[30px]  " />
-              </Button>
+              <HamburgerMenuIcon className="size-[30px]  lg:hidden mr-6 " />
             </SheetTrigger>
             <SheetContent side={"left"}>
               <SheetHeader>

@@ -4,6 +4,7 @@ import Business from "@/assets/business-growth.svg";
 import Image from "next/image";
 import { ButtonTemplate } from "./ButtonTemplate";
 import LottieAnimation from "./ui/animations/LottieAnimation";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
@@ -13,16 +14,15 @@ const Hero = () => {
           <div className="max-w-[700px] max-lg:max-w-[750px]  max-lg:text-center">
             <h1 className="text-text font-header text-[70px] xl:leading-[80px] leading-[50px] md:leading-[60px] font-[600] tracking-[-0.03em]  max-xl:text-[55px] max-md:text-[35px]">
               Innovative Social Media Solutions to{" "}
-              <span className="text-prim">
-                <br />
-                Unlock Growth
-              </span>
+              <span className="text-prim">Unlock Growth</span>
             </h1>
-            <p className="font-body text-text text-lg max-md:text-base lg:pt-6 lg:pb-10 max-lg:pb-6">
-              At Influence Infinity, we elevate brands to their limitless
+            <TextGenerateEffect
+              words="At Influence Infinity, we elevate brands to their limitless
               potential through innovative social media strategies that resonate
-              and engage.
-            </p>
+              and engage."
+              className="font-body text-text lg:text-2xl md:text-xl sm:text-sm lg:pt-6 lg:pb-10 max-lg:pb-6 max-lg:pt-4 font-semibold"
+            />
+
             <ButtonTemplate
               title="LET'S TALK"
               className="text-base p-8 max-lg:w-[180px] w-[230px] max-md:p-6 rounded-sm"
