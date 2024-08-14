@@ -3,18 +3,71 @@ import Logo from "@/assets/Influence-Infinity-Logo.png";
 import Image from "next/image";
 import { navigation } from "@/constants/constants";
 import Link from "next/link";
+
+import { ButtonTemplate } from "./ButtonTemplate";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Button } from "./ui/button";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Header = () => {
   return (
     <>
-      <div className="  border-gray border-b w-full flex justify-center py-[25px] ">
-        <div className="max-w-[1300px] w-full  flex justify-between items-center  ">
+      <div className="  border-gray border-b w-full flex justify-center py-[25px] px-2 ">
+        <div
+          className="max-w-[1300px] w-full z-50 flex justify-between items-center  
+          "
+        >
           <div>
-            <Image src={Logo} alt="Logo" className="max-h-[75px] max-w-max " />
+            <Image
+              src={Logo}
+              alt="Logo"
+              className="max-h-[75px] max-w-[240px] "
+            />
           </div>
-          <div className="space-x-10">
+
+          <Sheet>
+            <SheetTrigger>
+              <Button
+                variant={"ghost"}
+                className="lg:hidden mr-8 p-4 hover:bg-gray-100 rounded-lg h-[55px] "
+              >
+                <HamburgerMenuIcon className="size-[30px]  " />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side={"left"}>
+              <SheetHeader>
+                <SheetTitle>
+                  <Image
+                    src={Logo}
+                    alt="Logo"
+                    className="max-h-[75px] max-w-[240px] "
+                  />
+                </SheetTitle>
+              </SheetHeader>
+              <ul className="space-y-10 px-4 py-10">
+                {navigation.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      href={item.url}
+                      key={item.id}
+                      className="font-body text-xl  text-text font-bold "
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </SheetContent>
+          </Sheet>
+          <div className="space-x-10 max-lg:hidden">
             {navigation.map((item) => (
               <Link
                 href={item.url}
@@ -25,11 +78,8 @@ const Header = () => {
               </Link>
             ))}
           </div>
-          <div>
-            <Button className="space-x-2 p-6 rounded-2xl  bg-prim   bg-[linear-gradient(75deg,_#005dc7,_#FF00DD,_#A200FF)] [background-size:300%] bg-left [transition:500ms_background-position_ease-in-out] hover:bg-right">
-              <p>WORK WITH US</p>
-              <ArrowTopRightIcon className="size-5 " />
-            </Button>
+          <div className="max-lg:hidden">
+            <ButtonTemplate title="WORK WITH US" />
           </div>
         </div>
       </div>
