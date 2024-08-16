@@ -5,7 +5,7 @@ export interface LottieAnimationProps {
   animation: string;
   loop?: boolean;
   animationRef?: React.Ref<Player>;
-  fallback: ReactNode;
+  fallback: any;
 }
 
 const LottieAnimation: React.FC<LottieAnimationProps> = ({

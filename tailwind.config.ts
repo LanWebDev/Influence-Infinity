@@ -37,8 +37,10 @@ const config = {
         text2: "#747da1",
         prim: "#a200ff",
         seco: "#005dc7",
-        special: "#C8EF30",
+        purple: "#6610f2",
         gray1: "#f5f5ff",
+        gray2: "#F3F5F7",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

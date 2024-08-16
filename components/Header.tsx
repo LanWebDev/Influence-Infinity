@@ -6,12 +6,10 @@ import Link from "next/link";
 
 import { ButtonTemplate } from "./ButtonTemplate";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { Button } from "./ui/button";
 
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -29,12 +27,12 @@ const Header = () => {
             <Image
               src={Logo}
               alt="Logo"
-              className="max-h-[75px] max-w-[240px] "
+              className="max-h-[75px]  max-w-[240px] "
             />
           </div>
 
           <Sheet>
-            <SheetTrigger>
+            <SheetTrigger className="lg:hidden">
               <HamburgerMenuIcon className="size-[30px]  lg:hidden mr-6 " />
             </SheetTrigger>
             <SheetContent side={"left"}>
@@ -62,7 +60,7 @@ const Header = () => {
               </ul>
             </SheetContent>
           </Sheet>
-          <div className="space-x-10 max-lg:hidden">
+          <div className="space-x-10 max-xl:space-x-6  max-lg:hidden">
             {navigation.map((item) => (
               <Link
                 href={item.url}
