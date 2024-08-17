@@ -56,16 +56,5 @@ export const CardSkeletonContainer = ({
   children: React.ReactNode;
   showGradient?: boolean;
 }) => {
-  return (
-    <div
-      className={cn(
-        "h-[14rem] rounded-xl z-40",
-        className,
-        showGradient &&
-          "  [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
-      )}
-    >
-      {children}
-    </div>
-  );
+  return <div className={cn(" rounded-xl z-40 ", className)}>{children}</div>;
 };

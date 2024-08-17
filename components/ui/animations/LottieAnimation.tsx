@@ -5,7 +5,8 @@ export interface LottieAnimationProps {
   animation: string;
   loop?: boolean;
   animationRef?: React.Ref<Player>;
-  fallback: any;
+  fallback?: any;
+  className?: string;
 }
 
 const LottieAnimation: React.FC<LottieAnimationProps> = ({
@@ -13,6 +14,7 @@ const LottieAnimation: React.FC<LottieAnimationProps> = ({
   loop = true,
   animationRef,
   fallback,
+  className,
 }) => {
   return (
     <Suspense fallback={fallback}>
@@ -22,7 +24,7 @@ const LottieAnimation: React.FC<LottieAnimationProps> = ({
         keepLastFrame={!loop}
         autoplay
         src={animation}
-        className="h-full w-full"
+        className={className ? className : "h-full w-full"}
       />
     </Suspense>
   );

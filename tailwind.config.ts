@@ -40,6 +40,7 @@ const config = {
         purple: "#6610f2",
         gray1: "#f5f5ff",
         gray2: "#F3F5F7",
+        special: "#C8EF30",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
