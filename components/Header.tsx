@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Logo from "@/assets/Influence-Infinity-Logo.png";
 import Image from "next/image";
 import { navigation } from "@/constants/constants";
@@ -14,8 +15,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import SheetNavbar from "./SheetNavbar";
 
 const Header = () => {
+  const [sheetOpen, setSheetOpen] = useState(false);
+
   return (
     <>
       <div className="  border-gray border-b w-full flex justify-center py-[25px] px-4 ">
@@ -24,14 +28,16 @@ const Header = () => {
           "
         >
           <div>
-            <Image
-              src={Logo}
-              alt="Logo"
-              className="max-h-[75px]  max-w-[240px] "
-            />
+            <Link href={"/"}>
+              <Image
+                src={Logo}
+                alt="Logo"
+                className="max-h-[75px]  max-w-[240px] "
+              />
+            </Link>
           </div>
 
-          <Sheet>
+          <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger className="lg:hidden">
               <HamburgerMenuIcon className="size-[30px]  lg:hidden mr-6 " />
             </SheetTrigger>
@@ -45,19 +51,7 @@ const Header = () => {
                   />
                 </SheetTitle>
               </SheetHeader>
-              <ul className="space-y-10 px-4 py-10">
-                {navigation.map((item) => (
-                  <li key={item.id}>
-                    <Link
-                      href={item.url}
-                      key={item.id}
-                      className="font-body text-xl  text-text font-bold "
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <SheetNavbar setOpen={setSheetOpen} />
             </SheetContent>
           </Sheet>
           <div className="space-x-10 max-xl:space-x-6  max-lg:hidden">

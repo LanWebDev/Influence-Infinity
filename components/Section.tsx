@@ -10,7 +10,7 @@ const Section = ({ className, id, children }: SectionProps) => {
       id={id}
       className={`
       px-4
-      pb-[7rem]
+      pb-[6rem]
       ${className || ""}`}
     >
       {children}
