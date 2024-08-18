@@ -24,7 +24,7 @@ const BentoGrid = () => {
               <CardTitle className="group-hover:text-prim font-header text-text text-[22px]">
                 Social Media Advertising
               </CardTitle>
-              <CardDescription className="text-center w-full font-body text-[15px]">
+              <CardDescription className="text-center w-full font-body text-[16px] ">
                 Drive growth with targeted ad campaigns that effectively reach
                 and convert your ideal audience
               </CardDescription>
@@ -44,7 +44,7 @@ const BentoGrid = () => {
               <CardTitle className="group-hover:text-prim font-header text-text text-[22px]">
                 Social Media Management
               </CardTitle>
-              <CardDescription className="text-center w-full font-body text-[15px]">
+              <CardDescription className="text-center w-full font-body text-[16px]">
                 Strengthen your online presence with engaging, consistent
                 content that resonates across all platforms.
               </CardDescription>
@@ -64,7 +64,7 @@ const BentoGrid = () => {
               <CardTitle className="group-hover:text-prim font-header text-text text-[22px]">
                 Influencer Marketing
               </CardTitle>
-              <CardDescription className="text-center w-full font-body text-[15px]">
+              <CardDescription className="text-center w-full font-body text-[16px]">
                 Expand your brand&apos;s reach through strategic influencer
                 partnerships that align with your values.
               </CardDescription>
@@ -84,7 +84,7 @@ const BentoGrid = () => {
               <CardTitle className="group-hover:text-prim font-header text-text text-[23px]">
                 Storytelling Audit
               </CardTitle>
-              <CardDescription className="text-center w-full font-body text-[15px]">
+              <CardDescription className="text-center w-full font-body text-[16px]">
                 Enhance your brand&apos;s story by refining your message to
                 create stronger connections with your audience.
               </CardDescription>
@@ -104,7 +104,7 @@ const BentoGrid = () => {
               <CardTitle className="group-hover:text-special text-white font-header text-[22px]">
                 Content Consulting
               </CardTitle>
-              <CardDescription className="text-center text-white/90 w-full font-body text-[15px]">
+              <CardDescription className="text-center text-white/90 w-full font-body text-[16px]">
                 Elevate your content strategy with expert guidance to create
                 compelling and impactful content.
               </CardDescription>

@@ -16,9 +16,25 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import SheetNavbar from "./SheetNavbar";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
+
+  const router = useRouter();
+
+  const handleNavigation = (e: any, url: string) => {
+    if (url.startsWith("#")) {
+      e.preventDefault();
+
+      const elementId = url.slice(1);
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        router.replace(url, { scroll: false });
+      }
+    }
+  };
 
   return (
     <>
@@ -59,6 +75,8 @@ const Header = () => {
               <Link
                 href={item.url}
                 key={item.id}
+                passHref
+                onClick={(e) => handleNavigation(e, item.url)}
                 className="font-body text-lg text-text font-bold"
               >
                 {item.title}

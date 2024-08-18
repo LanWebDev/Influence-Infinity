@@ -10,7 +10,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "p-8 rounded-xl border border-[##8786861A] bg-gray2  ",
+        "pb-8 rounded-xl border border-[##8786861A] bg-gray2  ",
         className
       )}
     >
@@ -50,11 +50,9 @@ export const CardDescription = ({
 export const CardSkeletonContainer = ({
   className,
   children,
-  showGradient = true,
 }: {
   className?: string;
   children: React.ReactNode;
-  showGradient?: boolean;
 }) => {
-  return <div className={cn(" rounded-xl z-40 ", className)}>{children}</div>;
+  return <div className={cn("  z-40 ", className)}>{children}</div>;
 };
