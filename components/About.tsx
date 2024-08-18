@@ -19,7 +19,7 @@ const About = () => {
             <h2 className="uppercase text-base max-md:text-sm bg-gradient-to-r from-seco to-prim bg-clip-text text-transparent font-[600] w-max ">
               About us
             </h2>
-            <h3 className="font-header text-[40px] max-md:text-3xl font-[700] tracking-[-1px] ">
+            <h3 className="font-header text-[40px] max-md:text-3xl font-[700] tracking-[-1px] text-text">
               Social media strategy that makes your audience want to follow &
               engage with your brand
             </h3>

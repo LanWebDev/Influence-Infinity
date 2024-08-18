@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import CTABanner from "@/components/CTABanner";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -13,6 +14,7 @@ const Home = () => {
         <Hero />
         <Services />
         <About />
+        <CTABanner />
       </div>
     </>
   );

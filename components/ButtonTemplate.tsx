@@ -17,7 +17,6 @@ export const ButtonTemplate = ({
         } space-x-2      bg-[linear-gradient(75deg,_#005dc7,_#FF00DD,_#A200FF)] [background-size:300%] bg-left [transition:500ms_background-position_ease-in-out] hover:bg-right`}
       >
         <p>{title}</p>
-        <ArrowTopRightIcon className="size-5 " />
       </Button>
     </>
   );
