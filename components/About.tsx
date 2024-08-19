@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Section
       id={"about"}
-      className="relative w-full flex justify-center py-10 px-4"
+      className="relative w-full flex justify-center  py-10 px-4"
     >
       <div className="flex max-w-[1300px] max-lg:flex-col  items-center md:space-x-20 space-y-10">
         <div className="w-full">
@@ -20,8 +20,8 @@ const About = () => {
               About us
             </h2>
             <h3 className="font-header text-[40px] max-md:text-3xl font-[700] tracking-[-1px] text-text">
-              Social media strategy that makes your audience want to follow &
-              engage with your brand
+              Crafting social media strategies that inspire your audience to
+              connect, engage, and stay loyal to your brand
             </h3>
             <div className="py-4">
               <ButtonTemplate

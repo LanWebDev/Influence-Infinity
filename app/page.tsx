@@ -2,6 +2,7 @@ import About from "@/components/About";
 import CTABanner from "@/components/CTABanner";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Process from "@/components/Process";
 import Services from "@/components/Services";
 
 import React from "react";
@@ -15,6 +16,7 @@ const Home = () => {
         <Services />
         <About />
         <CTABanner />
+        <Process />
       </div>
     </>
   );
