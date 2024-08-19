@@ -7,7 +7,7 @@ const Process = () => {
   return (
     <Section
       id="process"
-      className="flex-col flex justify-center items-center bg-gray2 -translate-y-[150px] pb-[190px] "
+      className="flex-col flex justify-center items-center bg-gray2 -translate-y-[150px] pb-[230px] "
     >
       <div className="flex max-lg:flex-col items-center  max-w-[1300px] w-full px-4 pt-[14rem] py-16 space-y-4">
         <div className="flex-col space-y-2 justify-between w-full ">
