@@ -54,5 +54,5 @@ export const CardSkeletonContainer = ({
   className?: string;
   children: React.ReactNode;
 }) => {
-  return <div className={cn("  z-40 ", className)}>{children}</div>;
+  return <div className={cn("  z-25 ", className)}>{children}</div>;
 };

@@ -8,7 +8,7 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 const CTABanner = () => {
   return (
     <div className="flex justify-center py-10 pt-16 px-4 ">
-      <div className="max-w-[1300px] bg-gradient-to-r from-seco to-prim rounded-3xl w-full flex max-lg:flex-col justify-center items-center z-50">
+      <div className="max-w-[1300px] bg-gradient-to-r from-seco to-prim rounded-3xl w-full flex max-lg:flex-col justify-center items-center z-30">
         <div className="lg:w-[40%] max-lg:w-[90%] space-y-6 max-lg:text-center py-16">
           <h3 className="font-header text-white text-[50px] max-md:text-3xl font-[700] tracking-[-1px] ">
             Are you ready to grow? Let's talk about it.

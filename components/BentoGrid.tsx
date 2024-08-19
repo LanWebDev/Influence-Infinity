@@ -9,7 +9,7 @@ import LottieAnimation from "./ui/animations/LottieAnimation";
 
 const BentoGrid = () => {
   return (
-    <div className=" text-center">
+    <div className=" text-center z-1">
       <div className="grid grid-cols-6 max-md:grid-cols-1  gap-4 pt-[5rem] text-center ">
         <Card className="col-span-3 row-span-2 max-md:col-span-2 text-center flex-col flex  justify-center items-center ">
           <div className="max-w-[85%] max-lg:max-w-[95%] h-[90%] flex flex-col justify-center space-y-10">
@@ -17,7 +17,7 @@ const BentoGrid = () => {
               <LottieAnimation
                 animation="https://lottie.host/d2b04ca2-f7ec-4739-b228-3a8704de3fa5/jlRFOQppBh.json"
                 loop
-                className="h-full"
+                className="h-full z-2"
               />
             </CardSkeletonContainer>
             <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4  ">

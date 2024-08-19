@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "@/assets/Influence-Infinity-Logo.png";
 import Image from "next/image";
 import { navigation } from "@/constants/constants";
@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { ButtonTemplate } from "./ButtonTemplate";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
 
 import {
   Sheet,
@@ -20,6 +21,8 @@ import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
+
+  const scrollDirection = useScrollDirection();
 
   const router = useRouter();
 
@@ -38,9 +41,13 @@ const Header = () => {
 
   return (
     <>
-      <div className="  border-gray border-b w-full flex justify-center py-[25px] px-4 ">
+      <div
+        className={`sticky top-0 ${
+          scrollDirection === "down" ? "-top-[125px]" : "top-0 "
+        } w-full flex justify-center py-[25px]  px-4  transition-all duration-500 bg-white shadow-md z-50`}
+      >
         <div
-          className="max-w-[1300px] w-full z-50 flex justify-between items-center  
+          className="max-w-[1300px] w-full flex justify-between items-center  
           "
         >
           <div>
