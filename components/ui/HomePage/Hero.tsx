@@ -9,7 +9,7 @@ import Section from "../ReusableComponents/Section";
 
 const Hero = () => {
   return (
-    <Section id={"hero"}>
+    <Section id={"hero"} className="pb-[6rem]">
       <div className="w-full flex justify-center ">
         <div className="xl:w-[95%]  max-xl:w-[100%]  max-sm:w-full flex  justify-center px-10 lg:py-[150px] py-[100px] lg:h-[80vh] bg-gray-200 rounded-[2rem]">
           <div className=" max-w-[1300px] w-full  flex max-lg:flex-col items-center z-10 justify-center  space-y-10 ">

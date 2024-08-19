@@ -5,7 +5,7 @@ import BentoGrid from "./components/BentoGrid";
 
 const Services = () => {
   return (
-    <Section id="services" className="flex justify-center pt-10">
+    <Section id="services" className="flex justify-center pt-10 pb-[6rem]">
       <div className="flex flex-col justify-center w-full max-w-[1300px]">
         <div className="items-center justify-center flex  flex-col  w-full space-y-2 ">
           <h2 className="uppercase text-base max-md:text-sm bg-gradient-to-r from-seco to-prim bg-clip-text text-transparent font-[600] text-middle ">

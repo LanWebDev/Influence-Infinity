@@ -15,9 +15,9 @@ const TabsComponent = () => {
   }, []);
 
   return (
-    <div className="border-t flex- max-w-[1300px] w-full h-full justify-center items-center ">
+    <div className="border-t flex max-w-[1300px] w-full h-full justify-center items-center ">
       <div className=" flex max-lg:flex-col  gap-y-2 w-full">
-        <div className=" w-[25%] max-lg:w-full py-10 pr-6 h-full  flex-col  items-center gap-x-2 font-bold border-r text-text space-y-4 max-lg:border-b">
+        <div className=" w-[25%] max-lg:w-full py-10 pr-6 h-full  flex-col  items-center gap-x-2 font-bold border-r text-text space-y-2 max-lg:border-b">
           {tabs.map((item: any, index: any) => (
             <div
               ref={index === 0 ? firstBtnRef : null}
@@ -39,14 +39,16 @@ const TabsComponent = () => {
             <div
               key={index}
               className={`${
-                selectedTab === index ? "flex space-x-6" : "hidden"
+                selectedTab === index
+                  ? "flex max-lg:space-y-10 max-lg:flex-col space-x-6"
+                  : "hidden"
               }`}
             >
-              <div className="w-[40%] p-2 items-center flex">
+              <div className="lg:w-[40%] p-2 items-center flex">
                 <Image src={tab.image} alt="process image" />
               </div>
-              <div className="space-y-6 p-2 max-w-[60%]">
-                <div className="flex space-x-4">
+              <div className="space-y-6 p-2  lg:max-w-[60%]">
+                <div className="flex space-x-4 ">
                   <div className="p-2 min-w-[45px] text-center text-text text-lg   bg-special rounded-full h-max">
                     0{tab.id}/
                   </div>

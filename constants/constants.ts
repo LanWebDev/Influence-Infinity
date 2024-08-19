@@ -84,3 +84,42 @@ export const tabs = [
     point3: "Optimize based on results",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 0,
+    quote:
+      "Influence Infinity revamped our online presence, driving real engagement and bringing our brand's vision to life. We saw instant results!",
+    name: "Alex Mitchell",
+  },
+  {
+    id: 1,
+    quote:
+      "Quick, impactful results! Influence Infinity's creative strategies and spot-on influencer partnerships have massively boosted our brand visibility.",
+    name: "Priya Patel",
+  },
+  {
+    id: 2,
+    quote:
+      "They tailored a strategy that truly fit our brand. Influence Infinity's approach led to a significant increase in social media engagement.",
+    name: "Michael Davenport",
+  },
+  {
+    id: 3,
+    quote:
+      "From the moment I walked in, I knew I was in good hands. The attention to detail and the genuine care provided was beyond my expectations. Thank you!",
+    name: "Sarah Lindstrom",
+  },
+  {
+    id: 4,
+    quote:
+      "Influence Infinity turned our social media around with powerful storytelling. We've seen a huge jump in lead quality and engagement.",
+    name: "Emily Carson",
+  },
+  {
+    id: 5,
+    quote:
+      "Working with Influence Infinity feels like having an in-house team. Their expertise has grown our online community and strengthened our brand.",
+    name: "James Whitaker",
+  },
+];

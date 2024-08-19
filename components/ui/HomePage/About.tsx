@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Section
       id={"about"}
-      className="relative w-full flex justify-center  py-10 px-4"
+      className="relative w-full flex justify-center  py-10 px-4 pb-[6rem]"
     >
       <div className="flex max-w-[1300px] max-lg:flex-col  items-center md:space-x-20 space-y-10">
         <div className="w-full">

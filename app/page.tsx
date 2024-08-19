@@ -6,6 +6,7 @@ import Process from "@/components/ui/HomePage/Process";
 import Services from "@/components/ui/HomePage/Services";
 
 import React from "react";
+import Testimonials from "@/components/ui/HomePage/Testimonials";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <About />
         <CTABanner />
         <Process />
+        <Testimonials />
       </div>
     </>
   );
