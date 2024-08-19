@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Section from "./Section";
-import BentoGrid from "./BentoGrid";
+import Section from "../ReusableComponents/Section";
+import BentoGrid from "./components/BentoGrid";
 
 const Services = () => {
   return (

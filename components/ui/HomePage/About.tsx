@@ -1,8 +1,8 @@
 import React from "react";
-import Section from "./Section";
+import Section from "../ReusableComponents/Section";
 import aboutImage from "@/assets/about.svg";
 import Image from "next/image";
-import { ButtonTemplate } from "./ButtonTemplate";
+import { ButtonTemplate } from "../ReusableComponents/ButtonTemplate";
 
 const About = () => {
   return (

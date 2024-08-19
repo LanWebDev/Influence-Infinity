@@ -1,9 +1,9 @@
-import About from "@/components/About";
-import CTABanner from "@/components/CTABanner";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Process from "@/components/Process";
-import Services from "@/components/Services";
+import About from "@/components/ui/HomePage/About";
+import CTABanner from "@/components/ui/HomePage/CTABanner";
+import Header from "@/components/ui/Navigation/Header";
+import Hero from "@/components/ui/HomePage/Hero";
+import Process from "@/components/ui/HomePage/Process";
+import Services from "@/components/ui/HomePage/Services";
 
 import React from "react";
 

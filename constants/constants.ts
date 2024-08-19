@@ -1,6 +1,6 @@
 import strategyDevelopmentImage from "@/assets/strategy.svg";
 import messagingAlignmentImage from "@/assets/messagingAlignment.svg";
-import testingImage from "@/assets/testing.svg";
+import testingImage from "@/assets/testing2.svg";
 import audienceTargetingImage from "@/assets/Audience.svg";
 import accountStructureImage from "@/assets/accountStructure.svg";
 
@@ -56,7 +56,7 @@ export const tabs = [
   {
     id: 3,
     title: "Account Structure",
-    image: testingImage,
+    image: accountStructureImage,
     description:
       "We optimize the organization and structure of your social media accounts to enhance performance, streamline management, and ensure brand consistency across all touchpoints.",
     point1: "Optimize profiles",

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import TabsComponent from "./TabsComponent";
-import Section from "./Section";
+import TabsComponent from "./components/TabsComponent";
+import Section from "../ReusableComponents/Section";
 
 const Process = () => {
   return (

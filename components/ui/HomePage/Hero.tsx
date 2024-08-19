@@ -2,10 +2,10 @@
 import React from "react";
 import Business from "@/assets/business-growth.svg";
 import Image from "next/image";
-import { ButtonTemplate } from "./ButtonTemplate";
-import LottieAnimation from "./ui/animations/LottieAnimation";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
-import Section from "./Section";
+import { ButtonTemplate } from "../ReusableComponents/ButtonTemplate";
+import LottieAnimation from "../animations/LottieAnimation";
+import { TextGenerateEffect } from "../text-generate-effect";
+import Section from "../ReusableComponents/Section";
 
 const Hero = () => {
   return (

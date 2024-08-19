@@ -5,7 +5,7 @@ import Image from "next/image";
 import { navigation } from "@/constants/constants";
 import Link from "next/link";
 
-import { ButtonTemplate } from "./ButtonTemplate";
+import { ButtonTemplate } from "../ReusableComponents/ButtonTemplate";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 
@@ -16,13 +16,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import SheetNavbar from "./SheetNavbar";
+import SheetNavbar from "./components/SheetNavbar";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
 
-  const scrollDirection = useScrollDirection();
+  const { scrollDirection, isAtTop } = useScrollDirection();
 
   const router = useRouter();
 
@@ -44,7 +44,9 @@ const Header = () => {
       <div
         className={`sticky top-0 ${
           scrollDirection === "down" ? "-top-[125px]" : "top-0 "
-        } w-full flex justify-center py-[25px]  px-4  transition-all duration-500 bg-white shadow-md z-50`}
+        } w-full flex justify-center py-[25px]  px-4  transition-all duration-500 bg-white ${
+          isAtTop ? "border-b" : "shadow-md"
+        } z-50`}
       >
         <div
           className="max-w-[1300px] w-full flex justify-between items-center  

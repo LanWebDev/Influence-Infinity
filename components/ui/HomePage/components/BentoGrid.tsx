@@ -4,8 +4,8 @@ import {
   CardDescription,
   CardSkeletonContainer,
   CardTitle,
-} from "./ui/card";
-import LottieAnimation from "./ui/animations/LottieAnimation";
+} from "../../card";
+import LottieAnimation from "../../animations/LottieAnimation";
 
 const BentoGrid = () => {
   return (

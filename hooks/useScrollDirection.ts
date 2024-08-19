@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState("");
+  const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;
@@ -17,6 +18,9 @@ export const useScrollDirection = () => {
       ) {
         setScrollDirection(direction);
       }
+
+      setIsAtTop(scrollY === 0);
+
       lastScrollY = scrollY > 0 ? scrollY : 0;
     };
     window.addEventListener("scroll", updateScrollDirection); // add event listener
@@ -25,5 +29,5 @@ export const useScrollDirection = () => {
     };
   }, [scrollDirection]);
 
-  return scrollDirection;
+  return { scrollDirection, isAtTop };
 };
