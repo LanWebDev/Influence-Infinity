@@ -5,7 +5,10 @@ import { testimonials } from "@/constants/constants";
 
 const Testimonials = () => {
   return (
-    <Section id="testimonials" className="-translate-y-[270px] max-xxl:px-0">
+    <Section
+      id="testimonials"
+      className="-translate-y-[270px] max-xxl:px-0 pb-0"
+    >
       <div className="w-full flex justify-center z-15">
         <div className="w-full xxl:w-[95%] max-sm:w-full flex  justify-center px-10 p-16   bg-gradient-to-r from-seco to-prim  rounded-[2rem]">
           <div className=" max-w-[1300px] w-full  flex max-lg:flex-col z-10 justify-center  space-y-10 flex-col items-center">

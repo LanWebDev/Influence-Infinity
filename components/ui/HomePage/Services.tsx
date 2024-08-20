@@ -11,7 +11,7 @@ const Services = () => {
           <h2 className="uppercase text-base max-md:text-sm bg-gradient-to-r from-seco to-prim bg-clip-text text-transparent font-[600] text-middle ">
             Our Services
           </h2>
-          <h3 className="font-header text-[50px] max-md:text-3xl font-[700] tracking-[-1px] ">
+          <h3 className="font-header text-[50px] max-md:text-3xl font-[700] tracking-[-1px] text-text">
             Social Media Strategy
           </h3>
         </div>

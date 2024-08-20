@@ -7,6 +7,7 @@ import Services from "@/components/ui/HomePage/Services";
 
 import React from "react";
 import Testimonials from "@/components/ui/HomePage/Testimonials";
+import FAQ from "@/components/ui/HomePage/FAQ";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <CTABanner />
         <Process />
         <Testimonials />
+        <FAQ />
       </div>
     </>
   );

@@ -85,6 +85,13 @@ export const tabs = [
   },
 ];
 
+export const titleWords = [
+  "Drive Success",
+  "Boost Engagement",
+  "Enhance Visibility",
+  "Fuel Growth",
+];
+
 export const testimonials = [
   {
     id: 0,
