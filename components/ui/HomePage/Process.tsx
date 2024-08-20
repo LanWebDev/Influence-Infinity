@@ -7,7 +7,7 @@ const Process = () => {
   return (
     <Section
       id="process"
-      className="flex-col flex justify-center items-center bg-gray2 -translate-y-[150px] pb-[230px] "
+      className="flex-col flex justify-center items-center bg-gray2 -translate-y-[150px] "
     >
       <div className="flex max-lg:flex-col items-center  max-w-[1300px] w-full px-4 pt-[14rem] py-16 space-y-4">
         <div className="flex-col space-y-2 justify-between w-full ">
@@ -19,7 +19,7 @@ const Process = () => {
           </h3>
         </div>
         <div>
-          <p className="text-text2 text-xl">
+          <p className="text-text2 text-[21px] font-body">
             Our social media marketing strategy also incorporates strategic
             partnerships with influencers.
           </p>

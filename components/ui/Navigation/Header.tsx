@@ -40,13 +40,14 @@ const Header = () => {
   };
 
   return (
+    // REMOVE TOP-0 TO FIX THE ANIMATION
     <>
       <div
         className={`sticky top-0 ${
-          scrollDirection === "down" ? "-top-[125px]" : "top-0 "
-        } w-full flex justify-center py-[25px]  px-4  transition-all duration-500 bg-white ${
+          scrollDirection === "down" ? "-top-[125px]" : "top-0"
+        } w-full flex justify-center py-[25px] px-4 transition-all duration-500 bg-white z-50 ${
           isAtTop ? "border-b" : "shadow-md"
-        } z-50`}
+        }`}
       >
         <div
           className="max-w-[1300px] w-full flex justify-between items-center  

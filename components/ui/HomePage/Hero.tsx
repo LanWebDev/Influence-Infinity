@@ -23,7 +23,7 @@ const Hero = () => {
                 words="At Influence Infinity, we elevate brands to their limitless
               potential through innovative social media strategies that resonate
               and engage."
-                className="font-body text-text lg:text-2xl md:text-xl sm:text-md lg:pt-6 lg:pb-10 max-lg:pb-6 max-lg:pt-4 font-semibold"
+                className=" text-text lg:text-2xl md:text-xl sm:text-md lg:pt-6 lg:pb-10 max-lg:pb-6 max-lg:pt-4 font-semibold"
               />
 
               <ButtonTemplate

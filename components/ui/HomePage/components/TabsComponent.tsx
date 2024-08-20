@@ -34,7 +34,7 @@ const TabsComponent = () => {
           ))}
         </div>
 
-        <div className="p-6 py-10 rounded-xl lg:w-[75%] h-full ">
+        <div className="p-6 py-10 rounded-xl lg:w-[75%] h-full  ">
           {tabs.map((tab: any, index: any) => (
             <div
               key={index}
@@ -44,7 +44,7 @@ const TabsComponent = () => {
                   : "hidden"
               }`}
             >
-              <div className="lg:w-[40%] p-2 items-center flex">
+              <div className="lg:w-[40%] p-2 items-center flex min-h-[364px]">
                 <Image src={tab.image} alt="process image" />
               </div>
               <div className="space-y-6 p-2  lg:max-w-[60%]">
@@ -56,17 +56,17 @@ const TabsComponent = () => {
                     <h3 className="font-header text-[40px] max-lg:text-[30px] font-[700] tracking-[-1px] text-text">
                       {tab.title}
                     </h3>
-                    <p className="text-text text-lg">
+                    <p className="text-text text-lg font-body">
                       In Social Media Marketing
                     </p>
                   </div>
                 </div>
-                <div className="text-body text-text2 text-lg">
+                <div className="text-body text-text2 text-lg font-body">
                   {tab.description}
                 </div>
                 <div className="text-body text-text2 text-lg">
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-4">
+                    <li className="flex items-center gap-4 font-body">
                       <Image
                         src={checkedIcon}
                         alt="checked circle icon"
@@ -75,7 +75,7 @@ const TabsComponent = () => {
 
                       {tab.point1}
                     </li>
-                    <li className="flex items-center gap-4">
+                    <li className="flex items-center gap-4 font-body">
                       <Image
                         src={checkedIcon}
                         alt="checked circle icon"
@@ -84,7 +84,7 @@ const TabsComponent = () => {
 
                       {tab.point2}
                     </li>
-                    <li className="flex items-center gap-4">
+                    <li className="flex items-center gap-4 font-body">
                       <Image
                         src={checkedIcon}
                         alt="checked circle icon"

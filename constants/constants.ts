@@ -130,3 +130,45 @@ export const testimonials = [
     name: "James Whitaker",
   },
 ];
+
+export const questions = [
+  {
+    id: 1,
+    question:
+      "What makes Influence Infinity different from other social media marketing agencies?",
+    answer:
+      "We specialize in creating highly customized strategies that align with your unique brand goals. Our focus on innovation, data-driven insights, and authentic engagement sets us apart, ensuring that every campaign we launch is impactful and tailored to your audience.",
+  },
+  {
+    id: 2,
+    question: "How do you measure the success of a social media campaign?",
+    answer:
+      "We use a combination of key performance indicators (KPIs) such as engagement rates, follower growth, website traffic, and conversion metrics. We provide detailed reports and ongoing analysis to ensure that our strategies are delivering the results you need.",
+  },
+  {
+    id: 3,
+    question: "What industries do you specialize in?",
+    answer:
+      "We have experience working across a wide range of industries, including retail, technology, healthcare, and more. Our adaptable approach allows us to craft effective strategies regardless of your sector, ensuring that your brand message resonates with your target audience.",
+  },
+  {
+    id: 4,
+    question: "How do you approach content creation for social media?",
+    answer:
+      "Our content creation process begins with understanding your brand’s voice and audience. We develop content that is not only visually appealing but also aligned with your brand’s messaging. Our goal is to create engaging, shareable content that drives meaningful interaction and growth.",
+  },
+  {
+    id: 5,
+    question:
+      "Can you work with our in-house team, or do you handle everything independently?",
+    answer:
+      "We’re flexible in our approach! We can either work alongside your in-house team to enhance your existing efforts or manage your social media completely. We tailor our services to fit your needs, whether it’s a full-service approach or a collaborative partnership.",
+  },
+  {
+    id: 6,
+    question:
+      "How quickly can we expect to see results from our social media campaigns?",
+    answer:
+      "The timeline for results can vary depending on your goals and the strategies implemented. However, most clients begin to see significant improvements in engagement, follower growth, and conversions within the first few months. We focus on sustainable growth that builds over time.",
+  },
+];

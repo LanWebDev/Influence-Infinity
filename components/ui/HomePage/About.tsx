@@ -19,9 +19,11 @@ const About = () => {
             <h2 className="uppercase text-base max-md:text-sm bg-gradient-to-r from-seco to-prim bg-clip-text text-transparent font-[600] w-max ">
               About us
             </h2>
-            <h3 className="font-header text-[40px] max-md:text-3xl font-[700] tracking-[-1px] text-text">
-              Crafting social media strategies that inspire your audience to
-              connect, engage, and stay loyal to your brand
+            <h3 className="font-header text-[40px] max-md:text-3xl font-[700] tracking-[-1px] lg:leading-[55px] text-text">
+              Crafting social media strategies that inspire your audience to{" "}
+              <span className="text-prim ">connect</span>,{" "}
+              <span className="text-prim ">engage</span>, and{" "}
+              <span className="text-prim ">stay loyal</span> to your brand
             </h3>
             <div className="py-4">
               <ButtonTemplate
