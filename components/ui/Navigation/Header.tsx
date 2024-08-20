@@ -44,7 +44,7 @@ const Header = () => {
     <>
       <div
         className={`sticky top-0 ${
-          scrollDirection === "down" ? "-top-[125px]" : "top-0"
+          scrollDirection === "down" ? "-top-[130px]" : "top-0"
         } w-full flex justify-center py-[25px] px-4 transition-all duration-500 bg-white z-50 ${
           isAtTop ? "border-b" : "shadow-md"
         }`}

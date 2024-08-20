@@ -2,9 +2,9 @@
 import { useState, useEffect, useRef } from "react";
 
 import { tabs } from "@/constants/constants";
-import business from "@/assets/business-growth.svg";
+
 import Image from "next/image";
-import checkedIcon from "@/assets/checkedCircleIcon.svg";
+import checkedIcon from "@/assets/icons/checkedCircleIcon.svg";
 
 const TabsComponent = () => {
   const [selectedTab, setSelectedTab] = useState(0);

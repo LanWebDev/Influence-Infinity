@@ -14,7 +14,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h3>
         </div>
-        <div className="max-w-[900px] w-full max-h-[70px] text-left  ">
+        <div className="max-w-[900px] w-full  text-left  ">
           <Questions />
         </div>
       </div>
