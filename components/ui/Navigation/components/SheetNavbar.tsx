@@ -2,9 +2,10 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { navigation } from "@/constants/constants";
+import { motion } from "framer-motion";
 
 const SheetNavbar = ({ setOpen }: any) => {
-  const router = useRouter(); // Correctly imported from next/navigation
+  const router = useRouter();
 
   const handleNavigation = (e: any, url: string) => {
     setOpen(false);
@@ -26,7 +27,13 @@ const SheetNavbar = ({ setOpen }: any) => {
   return (
     <ul className="space-y-10 px-4 py-10">
       {navigation.map((item) => (
-        <li key={item.id}>
+        <motion.li
+          key={item.id}
+          initial={{ opacity: 0, x: "-30%" }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: item.id * 0.1 }}
+        >
           <Link
             href={item.url}
             passHref
@@ -35,7 +42,7 @@ const SheetNavbar = ({ setOpen }: any) => {
           >
             {item.title}
           </Link>
-        </li>
+        </motion.li>
       ))}
     </ul>
   );

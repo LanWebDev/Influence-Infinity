@@ -162,7 +162,7 @@ const Footer = () => {
                     className="text-gray1/80 transition hover:text-gray1"
                     href="#questions"
                   >
-                    FAQ's
+                    FAQ&apos;s
                   </Link>
                 </li>
 

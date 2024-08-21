@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Logo from "@/assets/Influence-Infinity-Logo.png";
 import Image from "next/image";
 import { navigation } from "@/constants/constants";
@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ButtonTemplate } from "../ReusableComponents/ButtonTemplate";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { motion } from "framer-motion";
 
 import {
   Sheet,
@@ -42,12 +43,15 @@ const Header = () => {
   return (
     // REMOVE TOP-0 TO FIX THE ANIMATION
     <>
-      <div
+      <motion.div
         className={`sticky top-0 ${
           scrollDirection === "down" ? "-top-[130px]" : "top-0"
         } w-full flex justify-center py-[25px] px-4 transition-all duration-500 bg-white z-50 ${
           isAtTop ? "border-b" : "shadow-md"
         }`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
       >
         <div
           className="max-w-[1300px] w-full flex justify-between items-center  
@@ -97,7 +101,7 @@ const Header = () => {
             <ButtonTemplate title="WORK WITH US" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

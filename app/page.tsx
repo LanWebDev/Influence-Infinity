@@ -7,7 +7,7 @@ import Services from "@/components/ui/HomePage/Services";
 import React from "react";
 import Testimonials from "@/components/ui/HomePage/Testimonials";
 import FAQ from "@/components/ui/HomePage/FAQ";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/ui/Footer/Footer";
 
 const Home = () => {
   return (
