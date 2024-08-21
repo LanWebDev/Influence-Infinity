@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 
 import { tabs } from "@/constants/constants";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 import checkedIcon from "@/assets/icons/checkedCircleIcon.svg";
 
@@ -15,7 +15,13 @@ const TabsComponent = () => {
   }, []);
 
   return (
-    <div className="border-t flex max-w-[1300px] w-full h-full justify-center items-center ">
+    <motion.div
+      className="border-t flex max-w-[1300px] w-full h-full justify-center items-center "
+      initial={{ opacity: 0, y: "20%" }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.5 }}
+    >
       <div className=" flex max-lg:flex-col  gap-y-2 w-full">
         <div className=" w-[25%] max-lg:w-full py-10 pr-6 h-full  flex-col  items-center gap-x-2 font-bold border-r text-text space-y-2 max-lg:border-b">
           {tabs.map((item: any, index: any) => (
@@ -36,13 +42,18 @@ const TabsComponent = () => {
 
         <div className="p-6 py-10 rounded-xl lg:w-[75%] h-full  ">
           {tabs.map((tab: any, index: any) => (
-            <div
+            <motion.div
               key={index}
               className={`${
                 selectedTab === index
                   ? "flex max-lg:space-y-10 max-lg:flex-col space-x-6"
                   : "hidden"
               }`}
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              exit={{ opacity: 0 }}
             >
               <div className="lg:w-[40%] p-2 items-center flex min-h-[364px]">
                 <Image src={tab.image} alt="process image" />
@@ -96,11 +107,11 @@ const TabsComponent = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

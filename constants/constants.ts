@@ -23,12 +23,12 @@ export const navigation = [
   {
     id: 3,
     title: "About Us",
-    url: "/about",
+    url: "#",
   },
   {
     id: 4,
     title: "Contact",
-    url: "/contact",
+    url: "#",
   },
 ];
 

@@ -103,7 +103,7 @@ const BentoGrid = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
         >
-          <Card className="lg:col-span-4 md:col-span-6 max-md:col-span-2 text-center flex-col flex justify-center items-center w-full">
+          <Card className="lg:col-span-4 md:col-span-6 max-md:col-span-2 text-center flex-col flex justify-center items-center h-full w-full">
             <div className="max-w-[85%] max-lg:max-w-[95%] h-[90%]">
               <CardSkeletonContainer>
                 <LottieAnimation
@@ -126,7 +126,7 @@ const BentoGrid = () => {
         </motion.div>
         <motion.div
           className="lg:col-span-2 md:col-span-6 max-md:col-span-2   text-center flex-col flex justify-center items-center"
-          initial={{ opacity: 0, y: "50%" }}
+          initial={{ opacity: 0, y: "30%" }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}

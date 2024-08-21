@@ -14,6 +14,7 @@ export const useScrollDirection = () => {
       const direction = scrollY > lastScrollY ? "down" : "up";
 
       if (
+        scrollY >= 130 &&
         direction !== scrollDirection &&
         (scrollY - lastScrollY > 1 || scrollY - lastScrollY < -1)
       ) {
