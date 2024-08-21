@@ -62,7 +62,7 @@ const Header = () => {
               <Image
                 src={Logo}
                 alt="Logo"
-                className="max-h-[75px]  max-w-[240px] "
+                className="max-h-[75px]  max-w-[240px] hover:opacity-85"
               />
             </Link>
           </div>
@@ -91,9 +91,12 @@ const Header = () => {
                 key={item.id}
                 passHref
                 onClick={(e) => handleNavigation(e, item.url)}
-                className="font-body text-lg text-text font-bold"
+                className="group relative font-body text-lg text-text font-bold hover:"
               >
                 {item.title}
+                <span
+                  className={`absolute bottom-0 left-0 block h-0.5 w-0 -mb-1 bg-purple transition-all duration-300 ease-in-out group-hover:w-full `}
+                ></span>
               </Link>
             ))}
           </div>

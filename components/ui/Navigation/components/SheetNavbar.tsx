@@ -38,7 +38,7 @@ const SheetNavbar = ({ setOpen }: any) => {
             href={item.url}
             passHref
             onClick={(e) => handleNavigation(e, item.url)}
-            className="font-body text-xl text-text font-bold cursor-pointer"
+            className="font-body text-xl text-text font-bold cursor-pointer hover:text-text/80"
           >
             {item.title}
           </Link>

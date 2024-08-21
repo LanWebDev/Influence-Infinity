@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../ReusableComponents/Section";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import { testimonials } from "@/constants/constants";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (

@@ -1,9 +1,10 @@
 import React from "react";
-import { ButtonTemplate } from "../ReusableComponents/ButtonTemplate";
+
 import growingImage from "@/assets/growing.svg";
 import Image from "next/image";
 import { Button } from "../button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
 
 const CTABanner = () => {
   return (
