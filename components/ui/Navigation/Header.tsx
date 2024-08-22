@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "@/assets/Influence-Infinity-Logo.png";
 import Image from "next/image";
 import { navigation } from "@/constants/constants";
@@ -23,7 +23,7 @@ import { useRouter } from "next/navigation";
 const Header = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
 
-  const { scrollDirection, isAtTop } = useScrollDirection();
+  const { scrollDirection, isAtTop, scrollY } = useScrollDirection();
 
   const router = useRouter();
 
@@ -44,7 +44,7 @@ const Header = () => {
     // REMOVE TOP-0 TO FIX THE ANIMATION
     <>
       <motion.div
-        className={`sticky ${
+        className={`${scrollY <= 130 || "sticky"} ${
           scrollDirection === "down" ? "-top-[130px]" : "top-0"
         } w-full flex justify-center py-[25px] px-4 transition-all duration-500 bg-white z-50 ${
           isAtTop ? "border-b" : "shadow-md"
