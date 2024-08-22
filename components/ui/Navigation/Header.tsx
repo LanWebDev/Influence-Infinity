@@ -44,7 +44,9 @@ const Header = () => {
     // REMOVE TOP-0 TO FIX THE ANIMATION
     <>
       <motion.div
-        className={`${scrollY <= 130 || "sticky"} ${
+        className={`${
+          (scrollY <= 130 && scrollDirection === "down") || "sticky"
+        } ${
           scrollDirection === "down" ? "-top-[130px]" : "top-0"
         } w-full flex justify-center py-[25px] px-4 transition-all duration-500 bg-white z-50 ${
           isAtTop ? "border-b" : "shadow-md"
