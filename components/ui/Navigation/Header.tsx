@@ -18,7 +18,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import SheetNavbar from "./components/SheetNavbar";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Header = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
@@ -26,6 +26,8 @@ const Header = () => {
   const { scrollDirection, isAtTop, scrollY } = useScrollDirection();
 
   const router = useRouter();
+
+  const pathname = usePathname();
 
   const handleNavigation = (e: any, url: string) => {
     if (url.startsWith("#")) {
@@ -93,11 +95,15 @@ const Header = () => {
                 key={item.id}
                 passHref
                 onClick={(e) => handleNavigation(e, item.url)}
-                className="group relative font-body text-lg text-text font-bold hover:"
+                className={`group relative font-body text-lg text-text font-bold ${
+                  pathname !== "/" && item.homepageonly ? "hidden" : ""
+                } `}
               >
                 {item.title}
                 <span
-                  className={`absolute bottom-0 left-0 block h-0.5 w-0 -mb-1 bg-purple transition-all duration-300 ease-in-out group-hover:w-full `}
+                  className={`absolute bottom-0 left-0 block h-0.5 w-0 -mb-1 bg-purple transition-all duration-300 ease-in-out group-hover:w-full ${
+                    item.url === pathname ? "w-full" : "w-0"
+                  }`}
                 ></span>
               </Link>
             ))}

@@ -14,16 +14,18 @@ export const navigation = [
     id: 1,
     title: "Services",
     url: "#services",
+    homepageonly: true,
   },
   {
     id: 2,
     title: "Our Process",
     url: "#process",
+    homepageonly: true,
   },
   {
     id: 3,
     title: "About Us",
-    url: "#",
+    url: "/about",
   },
   {
     id: 4,

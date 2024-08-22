@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { navigation } from "@/constants/constants";
 import { motion } from "framer-motion";
 
 const SheetNavbar = ({ setOpen }: any) => {
   const router = useRouter();
+
+  const pathname = usePathname();
 
   const handleNavigation = (e: any, url: string) => {
     setOpen(false);
@@ -38,7 +40,9 @@ const SheetNavbar = ({ setOpen }: any) => {
             href={item.url}
             passHref
             onClick={(e) => handleNavigation(e, item.url)}
-            className="font-body text-xl text-text font-bold cursor-pointer hover:text-text/80"
+            className={`font-body text-xl text-text font-bold cursor-pointer hover:text-text/80 ${
+              pathname !== "/" && item.homepageonly ? "hidden" : ""
+            } ${item.url === pathname ? "underline underline-offset-4" : ""}`}
           >
             {item.title}
           </Link>
