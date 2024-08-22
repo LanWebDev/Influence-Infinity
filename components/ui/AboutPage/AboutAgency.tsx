@@ -39,7 +39,7 @@ const AboutAgency = () => {
             initial={{ opacity: 0, y: "20%" }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <h3 className="font-header text-[50px] max-md:text-3xl font-[700] tracking-[-1px] leading-[60px] text-text text-center">
               Your Partner in <br /> Social Media{" "}
@@ -53,7 +53,7 @@ const AboutAgency = () => {
               initial={{ opacity: 0, y: "20%" }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.7 }}
+              transition={{ duration: 1, delay: 0.5 }}
             >
               At Influence Infinity, we believe that social media is more than
               just a platform—it&apos;s a powerful tool for storytelling,

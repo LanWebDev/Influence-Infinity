@@ -12,7 +12,7 @@ const CoreValues = () => {
   return (
     <Section id="corevalues" className="flex justify-center bg-gray1 pb-0">
       <div className="p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased max-w-[1300px] w-full  ">
-        <div className="flex max-lg:flex-col lg:space-x-4 max-lg:space-y-4 justify-evenly ">
+        <div className="flex max-lg:flex-col lg:space-x-4 max-lg:space-y-4 justify-evenly items-center">
           {coreValues.map((item) => (
             <motion.div
               initial={{ opacity: 0, x: "-20%" }}
@@ -20,14 +20,14 @@ const CoreValues = () => {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: item.id * 0.25 }}
               key={item.id}
-              className="flex flex-col justify-center items-center bg-white p-10 py-20 rounded-xl text-center  max-w-sm "
+              className="flex flex-col justify-center items-center bg-white p-10 py-20 rounded-xl text-center  lg:max-w-sm "
             >
               <div className="flex flex-col justify-center items-center space-y-4">
                 <Image src={item.icon} alt="icon" className="w-20" />
                 <h3 className="font-header text-text text-[26px] font-[600]">
                   {item.title}
                 </h3>
-                <p className="font-body text-[17px] text-text2 min-h-[153px]">
+                <p className="font-body text-[17px] text-text2 lg:min-h-[153px]">
                   {item.description}
                 </p>
                 <div className="py-4">
