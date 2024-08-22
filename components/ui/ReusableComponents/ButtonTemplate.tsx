@@ -6,7 +6,7 @@ export const ButtonTemplate = ({
   title,
   className,
 }: {
-  title: string;
+  title?: string;
   className?: string;
 }) => {
   return (

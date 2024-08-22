@@ -28,7 +28,7 @@ const BentoGrid = () => {
                   className="h-full z-2"
                 />
               </CardSkeletonContainer>
-              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4  ">
+              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4 cursor-pointer ">
                 <CardTitle className="group-hover:text-prim font-header text-text text-[22px]">
                   Social Media Advertising
                 </CardTitle>
@@ -56,7 +56,7 @@ const BentoGrid = () => {
                   className="h-[16rem] "
                 />
               </CardSkeletonContainer>
-              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4">
+              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4 cursor-pointer">
                 <CardTitle className="group-hover:text-prim font-header text-text text-[22px]">
                   Social Media Management
                 </CardTitle>
@@ -84,8 +84,8 @@ const BentoGrid = () => {
                   className="h-[16rem] "
                 />
               </CardSkeletonContainer>
-              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4">
-                <CardTitle className="group-hover:text-prim font-header text-text text-[22px]">
+              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4 cursor-pointer">
+                <CardTitle className="group-hover:text-prim font-header text-text text-[22px] ">
                   Influencer Marketing
                 </CardTitle>
                 <CardDescription className="text-center w-full font-body text-[16px]">
@@ -112,7 +112,7 @@ const BentoGrid = () => {
                   className="h-[22rem] "
                 />
               </CardSkeletonContainer>
-              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4">
+              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4 cursor-pointer">
                 <CardTitle className="group-hover:text-prim font-header text-text text-[23px]">
                   Storytelling Audit
                 </CardTitle>
@@ -140,7 +140,7 @@ const BentoGrid = () => {
                   className="h-[22rem] "
                 />
               </CardSkeletonContainer>
-              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4">
+              <div className="transition-transform duration-300 hover:-translate-y-2  w-full group p-4 cursor-pointer">
                 <CardTitle className="group-hover:text-special text-white font-header text-[22px]">
                   Content Consulting
                 </CardTitle>

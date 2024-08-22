@@ -4,9 +4,9 @@ import Business from "@/assets/business-growth.svg";
 import Image from "next/image";
 import { ButtonTemplate } from "../ReusableComponents/ButtonTemplate";
 import LottieAnimation from "../animations/LottieAnimation";
+import { motion } from "framer-motion";
 import { TextGenerateEffect } from "../text-generate-effect";
 import Section from "../ReusableComponents/Section";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (

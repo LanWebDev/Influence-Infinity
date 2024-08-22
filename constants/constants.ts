@@ -4,6 +4,10 @@ import testingImage from "@/assets/testing2.svg";
 import audienceTargetingImage from "@/assets/Audience.svg";
 import accountStructureImage from "@/assets/accountStructure.svg";
 
+import responsibilityIcon from "@/assets/icons/responsibility.png";
+import visionIcon from "@/assets/icons/vision.svg";
+import missionIcon from "@/assets/icons/mission.svg";
+
 export const navigation = [
   {
     id: 0,
@@ -50,7 +54,7 @@ export const tabs = [
     title: "Messaging Alignment",
     image: messagingAlignmentImage,
     description:
-      "We refine and harmonize your brand’s messaging across all social media platforms to create a consistent, authentic voice that deeply resonates with your audience, fostering trust and loyalty.",
+      "We refine and harmonize your brand's messaging across all social media platforms to create a consistent, authentic voice that deeply resonates with your audience, fostering trust and loyalty.",
     point1: "Craft a unified message",
     point2: "Align with audience values",
     point3: "Adapt tone per platform",
@@ -172,5 +176,29 @@ export const questions = [
       "How quickly can we expect to see results from our social media campaigns?",
     answer:
       "The timeline for results can vary depending on your goals and the strategies implemented. However, most clients begin to see significant improvements in engagement, follower growth, and conversions within the first few months. We focus on sustainable growth that builds over time.",
+  },
+];
+
+export const coreValues = [
+  {
+    id: 1,
+    title: "Our Vision",
+    icon: visionIcon,
+    description:
+      "To be the leading force in transforming how businesses engage with their audience, setting new standards in social media marketing, and fostering lasting brand loyalty in a digital-first world.",
+  },
+  {
+    id: 2,
+    title: "Our Mission",
+    icon: missionIcon,
+    description:
+      "To empower brands by harnessing the full potential of social media, creating meaningful connections with audiences, and driving measurable growth through innovative strategies and creative excellence.",
+  },
+  {
+    id: 3,
+    title: "Our Responsibility",
+    icon: responsibilityIcon,
+    description:
+      "To deliver results with integrity, ensuring that every campaign reflects our commitment to quality, transparency, and sustainable practices that benefit both our clients and their communities.",
   },
 ];
