@@ -34,6 +34,7 @@ const Values = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 py-10">
           {values.map((item) => (
             <motion.div
+              key={item.id}
               className="flex flex-col items-center text-center space-y-4 max-w-sm p-4"
               initial={{ opacity: 0, y: "20%" }}
               whileInView={{ y: 0, opacity: 1 }}
