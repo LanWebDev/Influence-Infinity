@@ -18,7 +18,7 @@ const CoreValues = () => {
               initial={{ opacity: 0, y: "20%" }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: item.id * 0.25 }}
+              transition={{ duration: 1, delay: item.id * 0.2 }}
               key={item.id}
               className="flex flex-col justify-center items-center  bg-white p-10 py-20 rounded-xl text-center  lg:max-w-sm "
             >

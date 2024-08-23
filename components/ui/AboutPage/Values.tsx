@@ -11,7 +11,7 @@ const Values = () => {
       <div className="w-full flex flex-col max-w-[1300px] justify-center items-center space-y-10">
         <div className="items-center justify-center flex  flex-col  w-full space-y-2 ">
           <motion.div
-            initial={{ opacity: 0, y: "20%" }}
+            initial={{ opacity: 0, y: "50%" }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -39,7 +39,7 @@ const Values = () => {
               initial={{ opacity: 0, y: "20%" }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: item.id * 0.2 }}
+              transition={{ duration: 1, delay: item.id * 0.1 }}
             >
               <div>
                 <Image src={item.icon} alt="icon" className="w-[100px]" />
