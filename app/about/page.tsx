@@ -2,6 +2,7 @@ import React from "react";
 import AboutHero from "@/components/ui/AboutPage/AboutHero";
 import AboutAgency from "@/components/ui/AboutPage/AboutAgency";
 import CoreValues from "@/components/ui/AboutPage/CoreValues";
+import Values from "@/components/ui/AboutPage/Values";
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
         <AboutHero />
         <AboutAgency />
         <CoreValues />
+        <Values />
       </div>
     </>
   );

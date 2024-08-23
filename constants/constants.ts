@@ -8,6 +8,13 @@ import responsibilityIcon from "@/assets/icons/responsibility.png";
 import visionIcon from "@/assets/icons/vision.svg";
 import missionIcon from "@/assets/icons/mission.svg";
 
+import creativityIcon from "@/assets/icons/creativity.svg";
+import integrityIcon from "@/assets/icons/integrity.svg";
+import collaborationIcon from "@/assets/icons/collaboration.png";
+import innovationIcon from "@/assets/icons/innovation.svg";
+import adaptabilityIcon from "@/assets/icons/adaptability.png";
+import resultsIcon from "@/assets/icons/results.png";
+
 export const navigation = [
   {
     id: 0,
@@ -200,5 +207,50 @@ export const coreValues = [
     icon: responsibilityIcon,
     description:
       "To deliver results with integrity, ensuring that every campaign reflects our commitment to quality, transparency, and sustainable practices that benefit both our clients and their communities.",
+  },
+];
+
+export const values = [
+  {
+    id: 1,
+    title: "Creativity",
+    icon: creativityIcon,
+    description:
+      "We ignite creativity to craft unique, impactful social media strategies that set our clients apart.",
+  },
+  {
+    id: 2,
+    title: "Integrity",
+    icon: integrityIcon,
+    description:
+      "We uphold the highest standards of honesty, transparency, and ethics in everything we do.",
+  },
+  {
+    id: 3,
+    title: "Collaboration",
+    icon: collaborationIcon,
+    description:
+      "We believe in the power of teamwork, working closely with our clients to achieve shared goals.",
+  },
+  {
+    id: 4,
+    title: "Innovation",
+    icon: innovationIcon,
+    description:
+      "We embrace new ideas and technology to keep our strategies fresh and ahead of the curve.",
+  },
+  {
+    id: 5,
+    title: "Adaptability",
+    icon: adaptabilityIcon,
+    description:
+      "We adapt quickly to the ever-changing landscape of social media, ensuring we always deliver relevant solutions.",
+  },
+  {
+    id: 6,
+    title: "Results-Driven",
+    icon: resultsIcon,
+    description:
+      "Our focus is on delivering measurable results that drive growth and success for our clients.",
   },
 ];
