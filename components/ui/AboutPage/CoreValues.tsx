@@ -15,10 +15,10 @@ const CoreValues = () => {
         <div className="flex max-lg:flex-col lg:space-x-4 max-lg:space-y-4 justify-evenly items-center">
           {coreValues.map((item) => (
             <motion.div
-              initial={{ opacity: 0, y: "20%" }}
+              initial={{ opacity: 0, y: "50%" }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: item.id * 0.2 }}
+              transition={{ duration: 1, delay: item.id * 0.15 }}
               key={item.id}
               className="flex flex-col justify-center items-center  bg-white p-10 py-20 rounded-xl text-center  lg:max-w-sm "
             >

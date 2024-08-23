@@ -39,7 +39,7 @@ const Values = () => {
               initial={{ opacity: 0, y: "20%" }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: item.id * 0.1 }}
+              transition={{ duration: 1, delay: 0.25 }}
             >
               <div>
                 <Image src={item.icon} alt="icon" className="w-[100px]" />

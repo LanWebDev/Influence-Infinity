@@ -26,7 +26,7 @@ const AboutAgency = () => {
         </motion.div>
         <div className=" justify-center flex  flex-col  space-y-2 lg:w-[50%] items-center px-4">
           <motion.div
-            initial={{ opacity: 0, y: "30%" }}
+            initial={{ opacity: 0, y: "50%" }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -36,7 +36,7 @@ const AboutAgency = () => {
             </h2>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, y: "30%" }}
+            initial={{ opacity: 0, y: "20%" }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.25 }}
@@ -63,10 +63,10 @@ const AboutAgency = () => {
               your audience, driving real, measurable results.
             </motion.p>
             <motion.p
-              initial={{ opacity: 0, y: "20%" }}
+              initial={{ opacity: 0, y: "30%" }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.3 }}
+              transition={{ duration: 1, delay: 0.25 }}
             >
               Our team of experts combines creativity with data-driven insights
               to deliver tailored solutions that elevate your brand&apos;s
@@ -76,10 +76,10 @@ const AboutAgency = () => {
               potential.
             </motion.p>
             <motion.p
-              initial={{ opacity: 0, y: "20%" }}
+              initial={{ opacity: 0, y: "30%" }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.35 }}
+              transition={{ duration: 1, delay: 0.25 }}
             >
               Partner with us, and let&apos;s build a social media presence that
               not only reflects your brand&apos;s identity but also connects
