@@ -109,7 +109,7 @@ const Header = () => {
             ))}
           </div>
           <div className="max-lg:hidden">
-            <ButtonTemplate title="WORK WITH US" />
+            <ButtonTemplate title="WORK WITH US" link={"/contact"} />
           </div>
         </div>
       </motion.div>

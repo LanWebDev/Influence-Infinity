@@ -17,7 +17,7 @@ const Stats = () => {
       className="flex justify-center items-center  bg-gradient-to-r from-seco to-prim pt-[6rem] "
     >
       <motion.div
-        className="grid grid-cols-4 max-lg:grid-cols-2 max-lg:gap-10 text-center items-center max-w-[1300px] w-full justify-evenly text-white py-10"
+        className="grid grid-cols-4 max-lg:grid-cols-2 max-lg:gap-x-10 text-center items-center max-w-[1300px] w-full justify-evenly text-white py-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

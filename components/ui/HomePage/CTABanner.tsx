@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "../button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const CTABanner = () => {
   return (
@@ -20,13 +21,15 @@ const CTABanner = () => {
           <h3 className="font-header text-white text-[50px] max-md:text-3xl font-[700] tracking-[-1px] ">
             Are you ready to grow? Let&apos;s talk about it.
           </h3>
-          <Button
-            className="w-[15rem] h-[3.5rem] rounded-3xl uppercase space-x-2 
-          transition ease-in-out bg-special duration-500 hover:bg-black hover:text-white  text-black font-[600]"
-          >
-            <p>let&apos;s get to work</p>
-            <ArrowTopRightIcon className="size-5 " />
-          </Button>
+          <Link href={"/contact"}>
+            <Button
+              className="w-[15rem] h-[3.5rem] rounded-3xl uppercase space-x-2 
+            transition ease-in-out bg-special duration-500 hover:bg-black hover:text-white  text-black font-[600]"
+            >
+              <p>let&apos;s get to work</p>
+              <ArrowTopRightIcon className="size-5 " />
+            </Button>
+          </Link>
         </div>
         <div className="">
           <Image

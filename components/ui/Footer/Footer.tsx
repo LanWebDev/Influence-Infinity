@@ -57,7 +57,7 @@ const Footer = () => {
                 <li>
                   <Link
                     className="text-gray1/80 transition hover:text-gray1"
-                    href="about"
+                    href="/about"
                   >
                     About Us
                   </Link>
@@ -129,7 +129,7 @@ const Footer = () => {
                 <li>
                   <Link
                     className="text-gray1/80 transition hover:text-gray1"
-                    href="#"
+                    href="/contact"
                   >
                     Content Consulting
                   </Link>

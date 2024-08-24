@@ -55,6 +55,7 @@ const About = () => {
               <ButtonTemplate
                 title="Read more"
                 className="w-[12rem] h-[3.5rem] rounded-3xl uppercase"
+                link={"/about"}
               />
             </motion.div>
           </div>

@@ -53,6 +53,7 @@ const Hero = () => {
                 <ButtonTemplate
                   title="LET'S TALK"
                   className="text-base p-8 max-lg:w-[180px] w-[230px] max-md:p-6 rounded-sm"
+                  link={"/contact"}
                 />
               </motion.div>
             </div>
