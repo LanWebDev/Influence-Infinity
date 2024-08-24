@@ -36,7 +36,11 @@ const Footer = () => {
                   <Image src={twitterIcon} alt="twitter icon" />
                 </li>
               </Link>
-              <Link href={""}>
+              <Link
+                href={"https://github.com/LanWebDev/Influence-Infinity"}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <li className="w-6">
                   <Image src={githubIcon} alt="github icon" />
                 </li>
