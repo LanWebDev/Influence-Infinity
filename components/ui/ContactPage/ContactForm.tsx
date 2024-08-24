@@ -67,7 +67,6 @@ const ContactForm = () => {
                 placeholder="How did you hear about us?"
                 type="text"
                 className="h-[3.5rem] text-base "
-                required
               />
             </LabelInputContainer>
           </div>
