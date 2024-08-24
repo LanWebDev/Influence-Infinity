@@ -7,6 +7,7 @@ import AboutProcess from "@/components/ui/AboutPage/AboutProcess";
 import Stats from "@/components/ui/AboutPage/Stats";
 import CTABanner from "@/components/ui/HomePage/CTABanner";
 import Team from "@/components/ui/AboutPage/Team";
+import Footer from "@/components/ui/Footer/Footer";
 
 const About = () => {
   return (
@@ -20,6 +21,7 @@ const About = () => {
         <Stats />
         <CTABanner />
         <Team />
+        <Footer />
       </div>
     </>
   );

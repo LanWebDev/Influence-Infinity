@@ -43,7 +43,7 @@ const Team = () => {
               transition={{ duration: 1, delay: 0.25 }}
             >
               <div>
-                <Image src={item.image} alt="icon" className="w-[100px]" />
+                <Image src={item.image} alt="icon" className="w-[150px]" />
               </div>
               <div className="space-y-2 ">
                 <h3 className="text-text font-header text-2xl font-[600]">

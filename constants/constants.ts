@@ -15,6 +15,15 @@ import innovationIcon from "@/assets/icons/innovation.svg";
 import adaptabilityIcon from "@/assets/icons/adaptability.png";
 import resultsIcon from "@/assets/icons/results.png";
 
+import ryanIcon from "@/assets/icons/ryan.png";
+import liamIcon from "@/assets/icons/liam.png";
+import jessicaIcon from "@/assets/icons/jessica.png";
+import sophiaIcon from "@/assets/icons/sophia.png";
+import ethanIcon from "@/assets/icons/ethan.png";
+import avaIcon from "@/assets/icons/ava.png";
+import michaelIcon from "@/assets/icons/michael.png";
+import oliviaIcon from "@/assets/icons/olivia.png";
+
 export const navigation = [
   {
     id: 0,
@@ -258,49 +267,49 @@ export const values = [
 export const team = [
   {
     id: 1,
-    image: creativityIcon,
+    image: ryanIcon,
     name: "Ryan Brooks",
     title: "Founder",
   },
   {
     id: 2,
-    image: creativityIcon,
+    image: liamIcon,
     name: "Liam Walker",
     title: "Chief Creative Officer",
   },
   {
     id: 3,
-    image: creativityIcon,
+    image: jessicaIcon,
     name: "Jessica Harper",
     title: "Social Media Strategist",
   },
   {
     id: 4,
-    image: creativityIcon,
+    image: sophiaIcon,
     name: "Sophia Patel",
     title: "Content Marketing Manager",
   },
   {
     id: 5,
-    image: creativityIcon,
+    image: ethanIcon,
     name: "Ethan Reynolds",
     title: "Digital Advertising Specialist",
   },
   {
     id: 6,
-    image: creativityIcon,
+    image: avaIcon,
     name: "Ava Thompson",
     title: "Lead Graphic Designer",
   },
   {
     id: 7,
-    image: creativityIcon,
+    image: michaelIcon,
     name: "Michael Nguyen",
     title: "Head of Influencer Partnerships",
   },
   {
     id: 8,
-    image: creativityIcon,
+    image: oliviaIcon,
     name: "Olivia Carter",
     title: "Analytics & Insights Director",
   },
