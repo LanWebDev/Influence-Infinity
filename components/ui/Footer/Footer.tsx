@@ -208,7 +208,12 @@ const Footer = () => {
             </p>
             <p className="mt-4 text-sm text-gray1/80 sm:order-first sm:mt-0">
               Built by{" "}
-              <Link href={""} className="text-special">
+              <Link
+                href={"https://github.com/LanWebDev"}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-special"
+              >
                 Lan Skrobar
               </Link>
             </p>
