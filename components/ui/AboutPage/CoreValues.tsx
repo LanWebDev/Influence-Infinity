@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const CoreValues = () => {
   return (
-    <Section id="corevalues" className="flex justify-center bg-gray1 pb-0">
+    <Section id="corevalues" className="flex justify-center bg-gray2 pb-0">
       <div className="p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased max-w-[1300px] w-full  ">
         <div className="flex max-lg:flex-col lg:space-x-4 max-lg:space-y-4 justify-evenly items-center">
           {coreValues.map((item) => (

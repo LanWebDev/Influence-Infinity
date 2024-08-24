@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import TabsComponent from "./components/TabsComponent";
+import TabsComponent from "../HomePage/components/TabsComponent";
 import Section from "../ReusableComponents/Section";
 import { motion } from "framer-motion";
 const Process = () => {
   return (
     <Section
       id="process"
-      className="flex-col flex justify-center items-center bg-gray2 -translate-y-[150px] z-1"
+      className="flex-col flex justify-center items-center bg-gray2  z-1"
     >
-      <div className="flex max-lg:flex-col items-center  max-w-[1300px] w-full px-4 pt-[14rem] py-16 space-y-4">
+      <div className="flex max-lg:flex-col items-center  max-w-[1300px] w-full px-4  py-16 space-y-4">
         <div className="flex-col space-y-2 justify-between w-full ">
           <motion.h2
             className="uppercase text-base max-md:text-sm bg-gradient-to-r from-seco to-prim bg-clip-text text-transparent font-[600] w-max "
