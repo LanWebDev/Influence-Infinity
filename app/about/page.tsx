@@ -6,6 +6,7 @@ import Values from "@/components/ui/AboutPage/Values";
 import AboutProcess from "@/components/ui/AboutPage/AboutProcess";
 import Stats from "@/components/ui/AboutPage/Stats";
 import CTABanner from "@/components/ui/HomePage/CTABanner";
+import Team from "@/components/ui/AboutPage/Team";
 
 const About = () => {
   return (
@@ -15,8 +16,10 @@ const About = () => {
         <AboutAgency />
         <CoreValues />
         <Values />
+        <AboutProcess />
         <Stats />
         <CTABanner />
+        <Team />
       </div>
     </>
   );
