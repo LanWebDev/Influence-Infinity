@@ -184,29 +184,33 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 border-t pt-6">
-          <div className="text-center sm:flex sm:justify-between sm:text-left ">
+          <div className="text-center sm:flex-col sm:justify-evenly space-y-2">
             <p className="text-sm text-gray1/80 space-x-2">
-              <span className="block sm:inline">All rights reserved.</span>
-
-              <a
+              <Link
                 className="inline-block text-prim underline transition hover:text-prim/75"
                 href="#"
               >
                 Terms & Conditions
-              </a>
+              </Link>
 
               <span>&middot;</span>
 
-              <a
+              <Link
                 className="inline-block text-prim underline transition hover:text-prim/75"
                 href="#"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </p>
 
             <p className="mt-4 text-sm text-gray1/80 sm:order-first sm:mt-0">
-              &copy; 2024 Influence Infinity
+              &copy; 2024 Influence Infinity. All rights reserved
+            </p>
+            <p className="mt-4 text-sm text-gray1/80 sm:order-first sm:mt-0">
+              Built by{" "}
+              <Link href={""} className="text-special">
+                Lan Skrobar
+              </Link>
             </p>
           </div>
         </div>

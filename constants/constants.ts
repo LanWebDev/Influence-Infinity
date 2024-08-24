@@ -254,3 +254,54 @@ export const values = [
       "Our focus is on delivering measurable results that drive growth and success for our clients.",
   },
 ];
+
+export const team = [
+  {
+    id: 1,
+    image: creativityIcon,
+    name: "Ryan Brooks",
+    title: "Founder",
+  },
+  {
+    id: 2,
+    image: creativityIcon,
+    name: "Liam Walker",
+    title: "Chief Creative Officer",
+  },
+  {
+    id: 3,
+    image: creativityIcon,
+    name: "Jessica Harper",
+    title: "Social Media Strategist",
+  },
+  {
+    id: 4,
+    image: creativityIcon,
+    name: "Sophia Patel",
+    title: "Content Marketing Manager",
+  },
+  {
+    id: 5,
+    image: creativityIcon,
+    name: "Ethan Reynolds",
+    title: "Digital Advertising Specialist",
+  },
+  {
+    id: 6,
+    image: creativityIcon,
+    name: "Ava Thompson",
+    title: "Lead Graphic Designer",
+  },
+  {
+    id: 7,
+    image: creativityIcon,
+    name: "Michael Nguyen",
+    title: "Head of Influencer Partnerships",
+  },
+  {
+    id: 8,
+    image: creativityIcon,
+    name: "Olivia Carter",
+    title: "Analytics & Insights Director",
+  },
+];
