@@ -12,7 +12,7 @@ import Footer from "@/components/ui/Footer/Footer";
 const Home = () => {
   return (
     <>
-      <div className=" flex-col justify-center">
+      <div className=" flex-col justify-center overflow-clip">
         <Hero />
         <Services />
         <About />
